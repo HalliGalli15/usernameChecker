@@ -1,8 +1,8 @@
 # UsernameChecker
 
----
-In construction
----
+* * * * * * * * * *
+## In construction
+* * * * * * * * * *
 
 
 This project was build in Angular 11 with NebularUI. This project was created to improve my regex skills and API-Requests.
