@@ -1,0 +1,55 @@
+.search-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    margin-top: 200px;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 55px;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
+  .search {
+    margin: 80px 0 0 0;
+    width: 800px;
+
+    .search-bar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .input {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .service-labels {
+      display: flex;
+      justify-content: center;
+
+      p {
+        font-size: 16px;
+        margin: 5px 0 0 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .actions {
+    height: 35px;
+    width: 50%;
+    margin: 100px 0 0 0;
+
+    button {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
