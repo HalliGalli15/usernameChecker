@@ -1,27 +1,26 @@
 # UsernameChecker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+---
+In construction
+---
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This project was build in Angular 11 with NebularUI. This project was created to improve my regex skills and API-Requests.
 
-## Code scaffolding
+With the "usernameChecker" you can search for a Username and see where it's used and where it's still free to use. Some future functions will include that you can see if it's a celebrety Username or a private Usernamen. When enough time a feature to create a account with this Username if not picked is planned.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Service
+In the moment there are these sites supported:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Twitter
+- Youtube
+- Github
+- Facebook
+- Instagram
+- Stackoverflow
+- ... more are coming
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Developing
+It behave like a normal Angular-Applikation. To start the development server run `ng serve` and navigate to `http://localhost:4200/`. Because a external Theming is used (NebularUI) run `ng add @nebular/theme` if it isn't already installed. To use the full potential you need a stable internet connection.
