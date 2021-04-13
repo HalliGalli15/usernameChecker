@@ -22,5 +22,5 @@ In the moment there are these sites supported:
 - ... more are coming
 
 
-## Developing
+## Development
 It behave like a normal Angular-Applikation. To start the development server run `ng serve` and navigate to `http://localhost:4200/`. Because a external Theming is used (NebularUI) run `ng add @nebular/theme` if it isn't already installed. To use the full potential you need a stable internet connection.
