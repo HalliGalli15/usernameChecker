@@ -7,11 +7,17 @@ import { SearchPageComponent } from './components/search-page/search-page.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbInputModule, NbIconModule, NbFormFieldModule, NbButtonModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { SiteGithubComponent } from './components/sites/site-github/site-github.component';
+import { SiteStackOverflowComponent } from './components/sites/site-stackOverflow/site-stackOverflow.component';
+import { ResultComponent } from './components/sites/results.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    SiteGithubComponent,
+    SiteStackOverflowComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,
