@@ -1,15 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchPageComponent } from './components/search-page/search-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbInputModule, NbIconModule, NbFormFieldModule, NbButtonModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbInputModule, NbIconModule, NbFormFieldModule, NbButtonModule, NbCardModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { SiteGithubComponent } from './components/sites/site-github/site-github.component';
 import { SiteStackOverflowComponent } from './components/sites/site-stackOverflow/site-stackOverflow.component';
 import { ResultComponent } from './components/sites/results.component';
+import { ResultCardModule } from 'projects/result-card/src/public-api';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { ResultComponent } from './components/sites/results.component';
     NbIconModule,
     NbFormFieldModule,
     NbButtonModule,
+    NbCardModule,
+    ResultCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
