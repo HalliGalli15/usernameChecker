@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-site-github',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./site-github.component.scss']
 })
 export class SiteGithubComponent implements OnInit {
+  @Input() username: string;
 
   constructor() { }
 

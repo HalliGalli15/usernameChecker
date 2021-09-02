@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '', component: SearchPageComponent
   },
   {
-    path: 'result', component: ResultComponent
+    path: 'result/:username', component: ResultComponent
   },
 ];
 

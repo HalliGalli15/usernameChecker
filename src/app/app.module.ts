@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchPageComponent } from './components/search-page/search-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbInputModule, NbIconModule, NbFormFieldModule, NbButtonModule, NbCardModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbInputModule, NbIconModule, NbFormFieldModule, NbButtonModule, NbCardModule, NbIconLibraries } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { SiteGithubComponent } from './components/sites/site-github/site-github.component';
 import { SiteStackOverflowComponent } from './components/sites/site-stackOverflow/site-stackOverflow.component';
@@ -15,26 +15,28 @@ import { ResultCardModule } from 'projects/result-card/src/public-api';
 @NgModule({
   declarations: [
     AppComponent,
+    ResultComponent,
     SearchPageComponent,
     SiteGithubComponent,
     SiteStackOverflowComponent,
-    ResultComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({ name: 'default' }),
-    NbLayoutModule,
-    NbEvaIconsModule,
-    NbInputModule,
-    NbEvaIconsModule,
-    NbIconModule,
-    NbFormFieldModule,
+    BrowserModule,
+    NbButtonModule,
     NbButtonModule,
     NbCardModule,
+    NbEvaIconsModule,
+    NbFormFieldModule,
+    NbFormFieldModule,
+    NbIconModule,
+    NbIconModule,
+    NbInputModule,
+    NbInputModule,
+    NbLayoutModule,
+    NbThemeModule.forRoot({ name: 'default' }),
     ResultCardModule,
-    NbButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

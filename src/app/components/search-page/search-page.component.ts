@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
@@ -7,10 +8,18 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./search-page.component.scss']
 })
 export class SearchPageComponent implements OnInit {
+  username: string;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  public openUrl() {
+    this.username = (<HTMLInputElement>document.getElementById("username")).value;
+    if (this.username) {
+      this.router.navigate(['/result/', this.username]);
+    }
   }
 
 }

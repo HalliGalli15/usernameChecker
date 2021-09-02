@@ -2,24 +2,18 @@
   <div class="title">
     <h1>Username Checker</h1>
   </div>
-
   <div class="search">
     <div class="search-bar">
       <nb-form-field>
-        <input type="text" fullWidth placeholder="Start typing..." nbInput />
-        <button nbSuffix nbButton ghost>
-          <nb-icon icon="search-outline" pack="eva"> </nb-icon>
-        </button>
+        <input type="text" fullWidth placeholder="Start typing..." nbInput name="username" id="username"
+          value="input" />
       </nb-form-field>
     </div>
     <div class="service-labels">
       <p>Snapchat | GitHub | Facebook | Instagram | Twitter</p>
     </div>
   </div>
-
   <div class="actions">
-    <button nbButton shape="round" size="small" status="info" routerLink="./result">
-      Check name
-    </button>
+    <button nbButton shape="round" size="small" status="info" (click)="openUrl()"> Check name </button>
   </div>
 </div>
