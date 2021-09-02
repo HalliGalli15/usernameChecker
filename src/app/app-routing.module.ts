@@ -5,11 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', component: SearchPageComponent
+    path: '', component: SearchPageComponent  
   },
   {
     path: 'result/:username', component: ResultComponent
   },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
