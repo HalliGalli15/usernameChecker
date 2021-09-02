@@ -34,6 +34,7 @@ import { ResultCardModule } from 'projects/result-card/src/public-api';
     NbButtonModule,
     NbCardModule,
     ResultCardModule,
+    NbButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

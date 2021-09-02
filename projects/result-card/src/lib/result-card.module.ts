@@ -1,11 +1,12 @@
-import { NbCardModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule } from '@nebular/theme';
 import { NgModule } from '@angular/core';
 import { ResultCardComponent } from './result-card.component';
 
 @NgModule({
   declarations: [ResultCardComponent],
   imports: [
-    NbCardModule
+    NbCardModule,
+    NbButtonModule
   ],
   exports: [ResultCardComponent]
 })
