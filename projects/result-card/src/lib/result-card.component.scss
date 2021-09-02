@@ -1,0 +1,19 @@
+.content {
+    background-color: aquamarine;
+    width: 60vw;
+}
+
+.description  p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+nb-card-footer {
+    font-size: 1rem;
+    font-weight: bold;
+}

@@ -1,0 +1,14 @@
+<div class="content">
+    <nb-card status="{{state}}">
+        <nb-card-header>{{title}}</nb-card-header>
+        <nb-card-body>
+            <div class="description">
+                <p>{{describtion}}</p>
+            </div>
+            <div class="actions">
+                <a outline status="info" (click)="openUrl()" nbButton>Open Site</a>
+            </div>
+        </nb-card-body>
+        <nb-card-footer>{{author}}</nb-card-footer>
+    </nb-card>
+</div>
