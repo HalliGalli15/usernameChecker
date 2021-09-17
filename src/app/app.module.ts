@@ -11,6 +11,7 @@ import { SiteGithubComponent } from './components/sites/site-github/site-github.
 import { SiteStackOverflowComponent } from './components/sites/site-stackOverflow/site-stackOverflow.component';
 import { ResultComponent } from './components/sites/results.component';
 import { ResultCardModule } from 'projects/result-card/src/public-api';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ResultCardModule } from 'projects/result-card/src/public-api';
     NbLayoutModule,
     NbThemeModule.forRoot({ name: 'default' }),
     ResultCardModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
