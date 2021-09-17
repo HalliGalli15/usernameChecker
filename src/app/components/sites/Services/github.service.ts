@@ -1,7 +1,6 @@
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { GithubDataService } from '../Data/github.dataService';
 
 @Injectable({
   providedIn: 'root'
