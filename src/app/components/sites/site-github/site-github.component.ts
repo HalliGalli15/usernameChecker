@@ -10,7 +10,8 @@ import { SiteInformation } from '../Data/siteInformation.interface';
 })
 export class SiteGithubComponent implements OnInit {
   @Input() username: string;
-  
+
+  public cardState: string;  
   public githubSiteInformation: SiteInformation;
 
   constructor(private readonly githubService: GithubService) { }
@@ -20,14 +21,26 @@ export class SiteGithubComponent implements OnInit {
       map((data) => {
           return {
             name: data.login,
-            description: data.bio,
+            description: "This username is already taken on Github.",
             url: data.html_url,
             author: data.name,
           };
         })
-      ).subscribe((information) => {
-        this.githubSiteInformation = information;
-      });
+      ).subscribe(
+        data => {
+          this.githubSiteInformation = data
+          this.cardState = 'danger';
+        },
+        err => {
+          this.githubSiteInformation = {
+            name: this.username,
+            description: 'This username is available on Github. Try and make it your name!',
+            url: 'https://github.com/',
+            author: 'unknown',
+          }
+          this.cardState = 'success'
+        },
+        () => console.log('yay')
+      );
   }
-
 }

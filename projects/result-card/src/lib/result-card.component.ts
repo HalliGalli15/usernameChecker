@@ -9,7 +9,7 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
 export class ResultCardComponent implements OnInit {
 
   @Input() title: string;
-  @Input() describtion: string;
+  @Input() description: string;
   @Input() author: string;
   @Input() url: string;
   @Input() state: 'success' | 'danger';

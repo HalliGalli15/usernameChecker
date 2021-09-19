@@ -1,1 +1,8 @@
-<lib-result-card *ngIf="githubSiteInformation" title="{{ githubSiteInformation.name }}" describtion="{{ githubSiteInformation.describtion }}" url="{{ githubSiteInformation.url }}" author="{{ githubSiteInformation.author }}" state="danger"></lib-result-card>
+<lib-result-card
+  *ngIf="githubSiteInformation"
+  title="{{ githubSiteInformation.name }}"
+  description="{{ githubSiteInformation.description }}"
+  url="{{ githubSiteInformation.url }}"
+  author="{{ githubSiteInformation.author }}"
+  state="{{ cardState }}"
+></lib-result-card>
